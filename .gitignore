@@ -1,0 +1,4 @@
+env
+__pycache__
+videoDownload/videos/
+transciptModel/testData/
