@@ -39,7 +39,6 @@ class User(Base):
     
     def validate_password(self, password) -> bool:
         """Confirms password validity"""
-        print(password)
         return bcrypt.checkpw(password.encode('utf-8'), self.hashed_password)
     
     def generate_token(self) -> dict :
