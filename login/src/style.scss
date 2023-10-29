@@ -1,0 +1,356 @@
+.base-container {
+  border-style: solid;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+  border-color: aliceblue;
+  background-color: wheat;
+  padding: 2%;
+  background-image: url("bgim6.jpg");
+  //   margin: auto;
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 30%;
+  display: flex;
+  //   box-shadow: wheat 2px 2px 2px 2px;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    font-size: 30px;
+    color: blue;
+    font-weight: 600;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .image {
+      width: 21em;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .form {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        box-shadow: #3474dbb2;
+
+        label {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: 20px;
+        }
+        input {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          margin-top: 6px;
+          min-width: 18em;
+          height: 37px;
+          padding: 0px 10px;
+          font-size: 16px;
+          font-family: "Open Sans", sans-serif;
+          background-color: #f3f3f3;
+          border: 0;
+          border-radius: 4px;
+          margin-bottom: 31px;
+          transition: all 250ms ease-in-out;
+          &:hover {
+            //background-color: #ffffff;
+            //box-shadow: 0px 0px 14px 0.3px #0e81ce96;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-top: 1em;
+    button {
+      padding-left: 20%;
+      padding-top: 10%;
+      padding-right: 20%;
+      padding-bottom: 10%;
+      border-radius: 10%;
+      font-size: 16px;
+      &:hover {
+        // box-shadow: 0px 0px 12px 0.8px ;
+        background-color: yellowgreen;
+      }
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+  }
+  .member {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+}
+
+.drop-zone {
+  max-width: 200px;
+  margin-left: 35%;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #4e4c4c;
+  border: 4px dashed #1fb496;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+.overall {
+  // background-color: rgb(255, 231, 186);
+}
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+.myform {
+  display: block;
+  margin: auto;
+}
+.form-field {
+  padding: 10px;
+}
+.form-field > input {
+  display: block;
+  margin: auto;
+}
+.form-field > label {
+  display: block;
+  text-align: center;
+}
+
+// .drz {
+// //   border-style: solid;
+// }
+.outerbox {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  //   border-style: solid;
+  .upload {
+    //   border-style: dashed;
+    background-color: rgb(216, 251, 246);
+    width: 45%;
+    margin-left: 2.5%;
+  }
+  .output {
+    //   border-style: dashed;
+    background-color: rgb(216, 251, 246);
+    width: 45%;
+    margin-left: 5%;
+  }
+}
+.otpt {
+  margin-top: 20%;
+  text-align: center;
+  // font-weight:100;
+  color: transparent;
+
+  text-shadow: 0 0 2px #5b5b5b;
+}
+.upld {
+  text-align: center;
+}
+.or {
+  text-align: center;
+}
+.ytb-label {
+  font-size: 150%;
+  font-weight: 500;
+}
+.ytb-link {
+  width: 40%;
+  margin-right: 2%;
+  margin-left: 3%;
+}
+.ytb-btn {
+  &:hover {
+    background-color: aqua;
+  }
+}
+#wrds {
+  margin: auto;
+}
+.wrdl {
+  margin-left: 15%;
+  font-weight: 500;
+  margin-right: 2%;
+  font-size: 150%;
+}
+.fbtn {
+  margin-left: 2%;
+  &:hover {
+    background-color: aqua;
+  }
+}
+.chtb-h {
+  margin-top: 5%;
+  text-align: center;
+  color: green;
+}
+.chtbt {
+  text-align: center;
+}
+.txtc {
+  text-align: center;
+  color: green;
+}
+.info {
+  margin-bottom: 5%;
+}
+.infoh {
+  text-align: center;
+  color: rgba(0, 0, 52, 1);
+}
+.img1 {
+  height: 200px;
+  width: 200px;
+  margin-left: 28%;
+}
+.infop {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 400;
+}
+.imgnav {
+  height: 60px;
+  width: 80px;
+}
+.info {
+  display: flex;
+}
+.sim2 {
+  width: 300px;
+  height: 300px;
+}
+.sim1 {
+  width: 300px;
+  height: 300px;
+}
+.infod1 {
+  // border-style: dashed;
+  margin-top: 5%;
+  margin-right: 7%;
+  margin-left: 1%;
+}
+.infod3 {
+  margin-top: 5%;
+  float: right;
+  // border-style: dashed;
+  margin-left: 15%;
+}
+
+.MessageForm {
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-radius: 0 0 3px 3px;
+  box-sizing: border-box;
+  flex: 0 0 30px;
+  display: flex;
+  background: #ccc;
+  position: absolute;
+  height: 10%;
+  bottom: 0px;
+  width: 100%;
+}
+
+.MessageForm .input-container {
+  flex: 1;
+  margin: 1px;
+}
+
+.MessageForm .button-container {
+  flex: 0 0 6em;
+  margin: 1px 1px 1px 0;
+}
+
+.MessageForm input,
+.MessageForm button {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: large;
+  height: 100%;
+  outline: none;
+  width: 100%;
+}
+
+.MessageForm input {
+  padding: 0 0 0 4px;
+}
+
+.chatbot {
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  border-style: dashed;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.MessageList {
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  height: 88%;
+  padding: 4px;
+  font-size: larger;
+  margin: 2%;
+}
